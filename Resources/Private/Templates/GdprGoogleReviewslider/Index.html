@@ -1,0 +1,29 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+{namespace my=GdprExtensionsCom\GdprExtensionsComGrs\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+
+<f:layout name="Default" />
+<f:section name="content">
+    <style type="text/css">
+        /* for widget*/
+
+
+    </style>
+    <f:if condition="{data.uid} && {reviews}">
+        <div class="gdpr-extensions-com-cookie-container" id="gdpr-extensions-com-cookie-container">
+            <div class="gdprInner" style="width:100%; height:100%;">
+                <f:render partial="Mainslider" arguments="{_all}" />
+            </div>
+        </div>
+
+    </f:if>
+
+
+
+</f:section>
+
+</html>
